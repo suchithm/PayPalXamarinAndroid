@@ -236,6 +236,18 @@ namespace Paypal
 			StartActivity (typeof(WebViewActivity));
 			//ScriptManager.RegisterStartupScript(Page, Page.GetType(), "popup", "window.open('" + builder + "','_blank','resizable=no,menubar=no,toolbar=no,location=no,directories=no,status=no')", true);
 			// Response.Redirect(builder.ToString());
+
+
+			//Success return page url
+//			builder.Append( "&return=" +
+//				HttpUtility.UrlEncode( ConfigurationManager.AppSettings["SuccessURL"].ToString() + "WebForm2.aspx"));
+//
+//			//Failed return page url
+//			builder.Append( "&cancel_return=" + HttpUtility.UrlEncode(
+//				ConfigurationManager.AppSettings["FailedURL"].ToString()));
+//			builder.Append( "&notify_url=" +
+//				HttpUtility.UrlEncode( ConfigurationManager.AppSettings["SuccessURL"].ToString() + "WebForm2.aspx"));
+			
 		}
 
 	}
